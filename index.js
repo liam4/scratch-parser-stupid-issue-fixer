@@ -7,7 +7,7 @@ const scratchParser = require('scratch-parser')
 const readFile = promisify(fs.readFile)
 const parser = promisify(scratchParser)
 
-readFile('./validated_rev-20.sb2')
+readFile('./validated_project.sb2')
   .then(parser)
   .then(project => {
     console.log(project)
